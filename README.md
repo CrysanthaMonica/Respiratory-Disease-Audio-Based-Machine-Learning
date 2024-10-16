@@ -1,1 +1,1 @@
-# Respiratory-Disease-Audio-Based-Machine-Learning
+# Harnessing Machine Learning for Audio-Based Respiratory Disease Classification Using Clinical Sound Data 
