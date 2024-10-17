@@ -42,7 +42,7 @@ The dataset provides detailed information on the chest location, acquisition mod
 
 For more details about the dataset, visit the [Kaggle Dataset Page](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/data).
 
-<a name="Project Structure"></a>
+<a name="project-structure"></a>
 ## 3. Project Structure
 
 ```
