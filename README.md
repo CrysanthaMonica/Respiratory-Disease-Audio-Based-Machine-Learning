@@ -6,12 +6,12 @@ This project aims to develop a machine learning model capable of classifying res
 [**Dataset Link**](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/data)
 
 ## Table of Contents
-1. [Project Motivation](#project-motivation)
-2. [Dataset](#dataset)
-3. [Project Structure](#project-structure)
-4. [Approach](#approach)
-5. [Results](#results)
-6. [Contributing](#contributing)
+- [Project Motivation](#project-motivation)
+- [Dataset](#dataset)
+- [Project Structure](#project-structure)
+- [Approach](#approach)
+- [Results](#results)
+- [Contributing](#contributing)
    
 ## 1. Project Motivation
 Respiratory sounds are critical indicators of lung health, often reflecting the presence of respiratory disorders. Conditions like asthma and COPD can be identified by sounds like wheezes and crackles. Traditionally, diagnosing these diseases involves manual interpretation by healthcare professionals, but with the rise of machine learning, there is an opportunity to automate and potentially improve the accuracy and speed of these diagnoses. This project explores various pretrained models and audio analysis techniques to develop a reliable classification model for respiratory sound data.
