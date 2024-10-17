@@ -5,27 +5,17 @@ This project aims to develop a machine learning model capable of classifying res
 
 [**Dataset Link**](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/data)
 
----
-
 ## Table of Contents
-1. [Project Motivation](#motivation)
+1. [Project Motivation](#project-motivation)
 2. [Dataset](#dataset)
-3. [Installation](#installation)
-4. [Project Structure](#structure)
-5. [Approach](#approach)
-6. [Results](#results)
-7. [Contributing](#contributing)
-8. [License](#license)
-
----
-
-<a name="motivation"></a>
+3. [Project Structure](#project-structure)
+4. [Approach](#approach)
+5. [Results](#results)
+6. [Contributing](#contributing)
+   
 ## 1. Project Motivation
 Respiratory sounds are critical indicators of lung health, often reflecting the presence of respiratory disorders. Conditions like asthma and COPD can be identified by sounds like wheezes and crackles. Traditionally, diagnosing these diseases involves manual interpretation by healthcare professionals, but with the rise of machine learning, there is an opportunity to automate and potentially improve the accuracy and speed of these diagnoses. This project explores various pretrained models and audio analysis techniques to develop a reliable classification model for respiratory sound data.
 
----
-
-<a name="dataset"></a>
 ## 2. Dataset
 The dataset used in this project is the **Respiratory Sound Database**, containing over 900 recordings from 126 patients across all age groups. The key features of the dataset include:
 
@@ -50,35 +40,6 @@ The dataset provides detailed information on the chest location, acquisition mod
 
 For more details about the dataset, visit the [Kaggle Dataset Page](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/data).
 
----
-
-<a name="installation"></a>
-## 3. Installation
-
-To run this project locally, follow these steps:
-
-### 3.1 Clone the repository
-```bash
-git clone https://github.com/yourusername/respiratory-sound-classification.git
-```
-
-### 3.2 Install required packages
-You can install the necessary libraries using `requirements.txt`:
-```bash
-pip install -r requirements.txt
-```
-
-### 3.3 Required Libraries
-- Python 3.x
-- Librosa (for audio processing)
-- TensorFlow / PyTorch (for model building)
-- Scikit-learn (for evaluation metrics)
-- Matplotlib, Seaborn (for visualization)
-- Numpy, Pandas (for data manipulation)
-
----
-
-<a name="structure"></a>
 ## 4. Project Structure
 
 ```
@@ -103,9 +64,6 @@ pip install -r requirements.txt
 - `src/`: Python scripts for data preprocessing, model building, and evaluation.
 - `requirements.txt`: Lists all dependencies needed for the project.
 
----
-
-<a name="approach"></a>
 ## 5. Approach
 
 ### 5.1 Data Preprocessing
@@ -121,9 +79,6 @@ pip install -r requirements.txt
 - **Metrics:** Use accuracy, precision, recall, and F1-score to evaluate the model’s performance.
 - **Cross-Validation:** Apply k-fold cross-validation to ensure robustness of the model across different subsets of the data.
 
----
-
-<a name="results"></a>
 ## 6. Results
 
 The model's performance on the test set will be evaluated based on its ability to classify respiratory sounds into categories like crackles, wheezes, and normal sounds. Results will include:
