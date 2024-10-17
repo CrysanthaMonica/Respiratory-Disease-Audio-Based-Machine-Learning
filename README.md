@@ -1,10 +1,7 @@
-# Let's write the README content to a .md file
-
-readme_content = """
 # Respiratory Sound Classification Project
 
 ## Overview
-This project aims to develop a machine learning model capable of classifying respiratory sounds into specific respiratory diseases, using the **Respiratory Sound Database** from Kaggle. The model will leverage pretrained models and commonly used audio libraries to detect conditions such as asthma, chronic obstructive pulmonary disease (COPD), pneumonia, and bronchiolitis from respiratory sound recordings. By harnessing the power of machine learning, this project hopes to contribute to advancements in medical diagnostics through automated sound analysis.
+This project aims to develop a machine learning model capable of classifying respiratory sounds into specific respiratory diseases, using the **Respiratory Sound Database** from Kaggle. The model will leverage pretrained models and commonly used audio libraries to detect conditions such as asthma, chronic obstructive pulmonary disease (COPD), pneumonia, and bronchiolitis from respiratory sound recordings. By harnessing the power of machine learning, this project hopes to contribute to advancements in medical diagnosis.
 
 [**Dataset Link**](https://www.kaggle.com/datasets/vbookshelf/respiratory-sound-database/data)
 
@@ -24,7 +21,7 @@ This project aims to develop a machine learning model capable of classifying res
 
 <a name="motivation"></a>
 ## 1. Project Motivation
-Respiratory sounds are critical indicators of lung health, often reflecting the presence of respiratory disorders. Conditions like asthma and COPD can be identified by sounds like wheezes and crackles. Traditionally, diagnosing these diseases involves manual interpretation by healthcare professionals, but with the rise of machine learning, there is an opportunity to automate and potentially improve the accuracy and speed of these diagnoses. This project explores various pretrained models and audio analysis libraries to classify respiratory diseases based on sound recordings.
+Respiratory sounds are critical indicators of lung health, often reflecting the presence of respiratory disorders. Conditions like asthma and COPD can be identified by sounds like wheezes and crackles. Traditionally, diagnosing these diseases involves manual interpretation by healthcare professionals, but with the rise of machine learning, there is an opportunity to automate and potentially improve the accuracy and speed of these diagnoses. This project explores various pretrained models and audio analysis techniques to develop a reliable classification model for respiratory sound data.
 
 ---
 
@@ -63,3 +60,79 @@ To run this project locally, follow these steps:
 ### 3.1 Clone the repository
 ```bash
 git clone https://github.com/yourusername/respiratory-sound-classification.git
+```
+
+### 3.2 Install required packages
+You can install the necessary libraries using `requirements.txt`:
+```bash
+pip install -r requirements.txt
+```
+
+### 3.3 Required Libraries
+- Python 3.x
+- Librosa (for audio processing)
+- TensorFlow / PyTorch (for model building)
+- Scikit-learn (for evaluation metrics)
+- Matplotlib, Seaborn (for visualization)
+- Numpy, Pandas (for data manipulation)
+
+---
+
+<a name="structure"></a>
+## 4. Project Structure
+
+```
+.
+├── data
+│   ├── Respiratory_Sound_Database
+│   ├── processed_data
+├── notebooks
+│   ├── 01_data_exploration.ipynb
+│   ├── 02_preprocessing.ipynb
+│   ├── 03_model_training.ipynb
+├── src
+│   ├── data_preprocessing.py
+│   ├── model.py
+│   ├── evaluation.py
+├── requirements.txt
+├── README.md
+```
+
+- `data/`: Contains the raw respiratory sound data from Kaggle and preprocessed data.
+- `notebooks/`: Jupyter notebooks for data exploration, preprocessing, and model training.
+- `src/`: Python scripts for data preprocessing, model building, and evaluation.
+- `requirements.txt`: Lists all dependencies needed for the project.
+
+---
+
+<a name="approach"></a>
+## 5. Approach
+
+### 5.1 Data Preprocessing
+- **Audio Preprocessing:** Convert the .wav files into a format suitable for model input, using techniques like short-time Fourier transform (STFT), Mel-spectrograms, and feature extraction (MFCCs).
+- **Annotation Alignment:** Align audio files with their corresponding labels (crackles, wheezes).
+- **Data Augmentation:** Apply techniques like noise addition, pitch shifting, and time stretching to increase the training data size.
+
+### 5.2 Model Selection
+- **Pretrained Models:** Explore audio classification models such as VGGish, YAMNet, and other deep learning architectures fine-tuned for medical sound classification.
+- **Custom Model:** Develop a custom CNN or RNN-based model tailored to the characteristics of respiratory sounds.
+
+### 5.3 Evaluation
+- **Metrics:** Use accuracy, precision, recall, and F1-score to evaluate the model’s performance.
+- **Cross-Validation:** Apply k-fold cross-validation to ensure robustness of the model across different subsets of the data.
+
+---
+
+<a name="results"></a>
+## 6. Results
+
+The model's performance on the test set will be evaluated based on its ability to classify respiratory sounds into categories like crackles, wheezes, and normal sounds. Results will include:
+- Confusion matrices
+- ROC curves
+- Precision-recall curves
+
+Check the results and detailed discussion in the notebook: [03_model_training.ipynb](./notebooks/03_model_training.ipynb).
+
+---
+
+<a name="contributing"></a>
