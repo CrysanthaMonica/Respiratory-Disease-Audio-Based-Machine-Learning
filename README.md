@@ -1,4 +1,4 @@
-# Respiratory Sound Classification Project
+# Deep Learning for Audio-Based Respiratory Disease Classification Using Clinical Sound Data
 
 ## Overview
 This project aims to develop a machine learning model capable of classifying respiratory sounds into specific respiratory diseases, using the **Respiratory Sound Database** from Kaggle. The model will leverage pretrained models and commonly used audio libraries to detect conditions such as asthma, chronic obstructive pulmonary disease (COPD), pneumonia, and bronchiolitis from respiratory sound recordings. By harnessing the power of machine learning, this project hopes to contribute to advancements in medical diagnosis.
